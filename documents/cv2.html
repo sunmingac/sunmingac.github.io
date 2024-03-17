@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Viewer</title>
+    <!-- Include Marked.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+            border-bottom: 1px solid #d0d0d0;
+            padding-bottom: 5px;
+        }
+        p, li {
+            font-size: 16px;
+            color: #666;
+        }
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        // Function to fetch and render markdown content
+        async function fetchAndRenderMarkdown() {
+            const response = await fetch('cv.md'); // Path to your Markdown file
+            const text = await response.text(); // Get the file content as text
+            const html = marked.parse(text); // Convert Markdown to HTML
+            document.getElementById('content').innerHTML = html; // Set the HTML content in the div
+        }
+
+        // Call the function on page load
+        window.addEventListener('load', fetchAndRenderMarkdown);
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Senior Scala Developer</title>
+    <style>
+        /* Basic reset */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            line-height: 1.6;
+            padding: 40px;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        header {
+            .contact-info {
+                text-align: right;
+            }
+            .contact-info p {
+                font-size: 16px;
+                color: #666;
+            }
+            .contact-info a {
+                color: #1a0dab;
+                text-decoration: none;
+            }
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        section {
+            border-top: 1px solid #ddd;
+        }
+
+        .skills p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none; /* Removes default bullets */
+            padding-left: 0; /* Aligns list to the left */
+        }
+
+        li {
+            padding: 4px; /* Adds padding above and below each item */
+            font-size: 16px; /* Sets a readable font size */
+        }
+
+        li p {
+            padding-left: 20px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .job-company {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .job-dates {
+            font-style: italic;
+            color: #777;
+            /* font-size: 14px; */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Ming Sun</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:sunmingac@gmail.com">sunmingac@gmail.com</a></p>
+            <p>Mobile: +44 7979 444 191</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sunmingac" target="_blank">sunmingac</a></p>
+        </div>
+    </header>
+    <section class="summary">
+        <h2>Summary</h2>
+        <ul>
+            <li>
+                <p>Experienced Software Engineer with over 10 years of expertise in multiple programming languages, including Python, Scala, Rust, and Java. Proficient in DevOps, mentoring, and Agile project management. Actively exploring Machine Learning and LLMs to enhance data-driven decision-making and automation.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>
+                <p>Python, Scala, Java, Rust, Javascript</p>
+                <p>PyTorch, Langchain, Huggingface, LLMs, RAG</p> 
+                <p>Docker, Kubernetes, AWS</p>
+                <p>Linux & MacOS, Git</p>
+                <p>TDD, BDD, CI/CD, Jenkins, Scrum, Kanban</p>
+                <p>PostgreSQL, MongoDB, Vector Database, Apache Kafka</p>
+            </li>
+        </ul>
+    </section>
+    <section class="experience">
+        <h2>Professional Experience</h2>
+        <ul>
+            <li>
+                <p class="job-title">Senior Developer (Contract)</p>
+                <p class="job-company">HMRC (UK) — Jun 2021 - Feb 2023</p>
+                <p class="job-dates">- Engineered and maintained secure authentication services, directly impacting user access for millions of UK citizens.</p>
+                <p class="job-dates">- Leveraged Scala ecosystem technologies such as Cats, Cats Effect, Akka, and MongoDB.</p>
+                <p class="job-dates">- Optimized application performance and reliability on AWS, using monitoring tools like Kibana and Grafana.</p>
+            </li>
+            <li>
+                <p class="job-title">Senior Developer</p>
+                <p class="job-company">Sky (Osterley, UK) — Mar 2019 – Aug 2020</p>
+                <p class="job-dates">- Developed highly available and scalable applications for user registration and device activation.</p>
+                <p class="job-dates">- Utilized Scala ecosystem technologies such as Http4s, Akka HTTP, Cats, Cats Effect</p>
+                <p class="job-dates">- Implemented data persistence solutions using MongoDB and Apache Kafka</p>
+                <p class="job-dates">- Deployed applications to Kubernetes clusters on AWS, ensuring scalability and reliability.</p>
+            </li>
+            <li>
+                <p class="job-title">Platform Engineer</p>
+                <p class="job-company">Telegraph Media Group (London, UK) — Oct 2018 – Feb 2019</p>
+                <p class="job-dates">- Developed high-traffic, scalable internal platforms using Scala and Java</p>
+                <p class="job-dates">- Powered The Telegraph's websites, mobile apps, and third-party applications</p>
+                <p class="job-dates">- Leveraged AWS and Google Cloud Platform (GCP) for cloud infrastructure</p>
+                <p class="job-dates">- Improved core platform services, including Content API, User Preferences, and Sitemap Service</p>
+            </li>
+            <li>
+                <p class="job-title">Java / Scala Developer</p>
+                <p class="job-company">WorldFirst (London, UK) — Jan 2017 – Aug 2018</p>
+                <p class="job-dates">- Spearheaded the modernization of a monolithic compliance system into microservices architecture</p>
+                <p class="job-dates">- Utilized technologies: Java 8, Scala, Apache Kafka, Akka, React.js, Docker, and Kubernetes</p>
+                <p class="job-dates">- Developed a third-party card transaction integration system with a focus on compliance and SLAs</p>
+                <p class="job-dates">- Collaborated closely with business stakeholders to align solutions with business needs</p>            </li>
+            <li>
+                <p class="job-title">Developer</p>
+                <p class="job-company">NET-A-PORTER.COM (London, UK) — Mar 2011 – Mar 2016</p>
+                <p class="job-dates">- Collaborated as part of an Agile team responsible for the development of web applications</p>
+                <p class="job-dates">- Utilized technologies: JavaScript, Node.js, Java, Spring, and MySQL</p>
+                <p class="job-dates">- Improved automated testing by introducing BDD with Cucumber and Selenium</p>
+                <p class="job-dates">- Replaced legacy cron-based dataflow with Apache ActiveMQ</p>            </li>
+            <li>
+                <p class="job-title">Developer</p>
+                <p class="job-company">Animation 2000 Ltd (Pinewood Studios, UK) — Apr 2004 – Feb 2011</p>
+                <p class="job-dates">- Designed and implemented SD Payroll System, a specialized solution for the film industry</p>
+                <p class="job-dates">- Successfully implemented the HMRC Gateway Document Submission Protocol</p>
+                <p class="job-dates">- Contributed to the setup and maintenance of standby database</p>            </li>
+        </ul>
+    </section>
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <p class="job-title">M.Sc. Computing Technologies</p>
+                <p class="job-company">University of Northumbria at Newcastle — 2003</p>
+            </li>
+            <li>
+                <p class="job-title">B.Sc. Computing Science</p>
+                <p class="job-company">Xi’an University of Technology — 1996</p>
+            </li>
+        </ul>
+    </section>
+    <section class="references">
+        <h2>References</h2>
+        <ul>
+            <li>
+                <p class="job-title">Available on request</p>
+            </li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

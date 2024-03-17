@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Monads vs Algebraic Effects",
+        "date": "2024/05/01",
+        "file": "algebraic-effects.md",
+        "summary": "Algebraic effects and monads are both concepts used in functional programming to handle side effects, but they do so in different ways. Understanding each concept's basics and differences can help clarify their applications and benefits."
+    },
+    {
+        "title": "Retrieval Augmented Generation (RAG)",
+        "date": "2024-01-15",
+        "file": "rag.md",
+        "summary": "Retrieval Augmented Generation (RAG) is a method that combines the powers of pre-trained language models and information retrieval systems to enhance the generation of text. It is particularly useful in tasks like question answering, where the model can benefit from external knowledge sources."
+    },
+    {
+        "title": "Convolutional neural network (CNN)",
+        "date": "2024-01-15",
+        "file": "cnn.md",
+        "summary": "This guide provides a step-by-step approach to using PyTorch for building a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset. PyTorch offers flexibility and a dynamic computation graph that allows for straightforward and intuitive model building and training. "
+    },
+    {
+        "title": "Implicits in Scala 3",
+        "date": "2023-06-01",
+        "file": "implicits-scala3.md",
+        "summary": "Scala 3 has made significant changes to implicits, aiming to simplify the concepts and make them more intuitive. This article explores the migration from Scala 2 implicits to Scala 3’s new features."
+    },
+    {
+        "title": "Category Theory",
+        "file": "category-theory.md",
+        "summary": "Category theory is a branch of mathematics that focuses on abstract structures and the relationships between them. It is a highly theoretical framework that provides a way of viewing mathematical concepts through a lens of objects and morphisms (arrows) connecting these objects."
+    },
+    {
+        "title": "Free Monad to Tagless Final",
+        "file": "tagless-final.md",
+        "summary": "Free Monad and Tagless Final offer different approaches to structuring and abstracting computations in a program, providing flexibility, modularity, and testability."
+    }
+]
