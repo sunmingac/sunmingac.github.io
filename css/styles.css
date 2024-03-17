@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #222;
+    color: lime;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    .cursor {
+        animation: blink 1s infinite;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: lime;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons {
+        margin: 0 10px;
+    }
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+    .social-icons img:hover {
+        opacity:0.5;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
