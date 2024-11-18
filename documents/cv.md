@@ -7,14 +7,21 @@
 Seasoned Scala Developer with over 7 years of experience specializing in functional programming and JVM technologies. Proficient in leading-edge Scala libraries (Cats, Cats Effect, etc.) with a robust background in DevOps (AWS, Kubernetes, CI/CD), and a proven track record in mentoring and Agile project management. Actively exploring the latest technologies, including Machine Learning and LLMs.
 
 ### Technical Skills
-Cats, Cats-effect, Http4s, fs2, ZIO, Akka, Circe, Kyo  
+Cats, Cats-effect, Http4s, fs2, ZIO, Akka, Kyo  
 Scala, Java, Rust, Python, Javascript  
-Docker, Kubernetes, AWS  
+AWS, Google Cloud, Kubernetes, Docker
 Linux & MacOS, Git  
-TDD, BDD, CI/CD, Jenkins, Scrum, Kanban  
-PostgreSQL, MongoDB, Vector Database, Apache Kafka
+TDD, BDD, CI/CD, Jenkins, GitOps, Agile  
+Apache Kafka, PostgreSQL, MongoDB, Vector Database
 
 ### Professional Experience
+
+#### Senior Scala Developer (Contract)
+**Sky (UK) — Aug 2024 - Present**
+- Architected and implemented high-performance personalization APIs for the SkyQ platform, enhancing viewer experience through tailored content recommendations
+- Engineered robust streaming solutions utilizing Cats Effect and fs2, with Tapir for type-safe API development
+- Designed and optimized real-time data processing pipelines using Apache Kafka for scalable recommendation delivery
+- Orchestrated continuous deployment workflows through GitOps methodology with ArgoCD on Google Kubernetes Engine
 
 #### Scala Developer (Contract)
 **HMRC (UK) — Jun 2021 - Feb 2023**  
