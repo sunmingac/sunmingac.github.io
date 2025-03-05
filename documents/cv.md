@@ -17,7 +17,7 @@ Apache Kafka, PostgreSQL, MongoDB, Vector Database
 ### Professional Experience
 
 #### Senior Scala Developer (Contract)
-**Sky (UK) — Aug 2024 - Present**
+**Sky (UK) — Aug 2024 - Dec 2024**
 - Architected and implemented high-performance personalization APIs for the SkyQ platform, enhancing viewer experience through tailored content recommendations
 - Engineered robust streaming solutions utilizing Cats Effect and fs2, with Tapir for type-safe API development
 - Designed and optimized real-time data processing pipelines using Apache Kafka for scalable recommendation delivery
