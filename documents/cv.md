@@ -1,80 +1,85 @@
-## <div align="center">Ming Sun</div>
-**Email:** [sunmingac@gmail.com](mailto:sunmingac@gmail.com)  
-**Website:** [sunmingac.github.io](https://sunmingac.github.io)  
-**LinkedIn:** [linkedin.com/in/sunmingac](https://www.linkedin.com/in/sunmingac)
+# Ming Sun
 
-### Summary
-Seasoned Scala Developer with over 7 years of experience specializing in functional programming and JVM technologies. Proficient in leading-edge Scala libraries (Cats, Cats Effect, etc.) with a robust background in DevOps (AWS, Kubernetes, CI/CD), and a proven track record in mentoring and Agile project management. Actively exploring the latest technologies, including Machine Learning and LLMs.
+**Scala Developer | Functional Programming & Distributed Systems**
 
-### Technical Skills
-Cats, Cats-effect, Http4s, fs2, ZIO, Akka, Kyo  
-Scala, Java, Rust, Python, Javascript  
-AWS, Google Cloud, Kubernetes, Docker
-Linux & MacOS, Git  
-TDD, BDD, CI/CD, Jenkins, GitOps, Agile  
-Apache Kafka, PostgreSQL, MongoDB, Vector Database
+London, UK | 07979444191 | [sunmingac@gmail.com](mailto:sunmingac@gmail.com)
 
-### Professional Experience
+[LinkedIn](https://www.linkedin.com/in/sunmingac) | [Website](https://sunmingac.github.io/) | [GitHub](https://github.com/sunmingdh)
 
-#### Senior Scala Developer (Contract)
-**Sky (UK) — Aug 2024 - Dec 2024**
-- Architected and implemented high-performance personalization APIs for the SkyQ platform, enhancing viewer experience through tailored content recommendations
-- Engineered robust streaming solutions utilizing Cats Effect and fs2, with Tapir for type-safe API development
-- Designed and optimized real-time data processing pipelines using Apache Kafka for scalable recommendation delivery
-- Orchestrated continuous deployment workflows through GitOps methodology with ArgoCD on Google Kubernetes Engine
+## Profile
 
-#### Scala Developer (Contract)
-**HMRC (UK) — Jun 2021 - Feb 2023**  
-- Engineered and maintained secure authentication services, directly impacting user access for millions of UK citizens.
-- Leveraged Scala ecosystem technologies such as Cats, Cats Effect, Akka, and MongoDB.
-- Optimized application performance and reliability on AWS, using monitoring tools like Kibana and Grafana.
+Scala developer specialising in functional programming and distributed systems, with over 20 years of software development experience. Strong expertise in the functional Scala ecosystem, asynchronous processing and cloud-based backend services.
 
-#### Scala Developer
-**Sky (Osterley, UK) — Mar 2019 – Aug 2020**  
-- Developed highly available and scalable applications for user registration and device activation.
-- Utilized Scala ecosystem technologies such as Http4s, Akka HTTP, Cats, Cats Effect
-- Implemented data persistence solutions using MongoDB and Apache Kafka
-- Deployed applications to Kubernetes clusters on AWS, ensuring scalability and reliability.
+## Technical Skills
 
-#### Platform Engineer
-**Telegraph Media Group (London, UK) — Oct 2018 – Feb 2019**
-- Developed high-traffic, scalable internal platforms using Scala and Java
-- Powered The Telegraph's websites, mobile apps, and third-party applications
-- Leveraged AWS and Google Cloud Platform (GCP) for cloud infrastructure
-- Improved core platform services, including Content API, User Preferences, and Sitemap Service
+Scala 3, Java, Cats, Cats Effect, FS2, ZIO, Kyo  
+Http4s, Tapir, Akka/Pekko, Apache Kafka, MongoDB, PostgreSQL  
+AWS, GCP, Kubernetes, Docker, Argo CD, Jenkins, GitOps, CI/CD
 
-#### Java / Scala Developer
-**WorldFirst (London, UK) — Jan 2017 – Aug 2018**
-- Spearheaded the modernization of a monolithic compliance system into microservices architecture
-- Utilized technologies: Java 8, Scala, Apache Kafka, Akka, React.js, Docker, and Kubernetes
-- Developed a third-party card transaction integration system with a focus on compliance and SLAs
-- Collaborated closely with business stakeholders to align solutions with business needs
+## Professional Experience
 
-#### Java Developer
-**NET-A-PORTER.COM (London, UK) — Mar 2011 – Mar 2016**
-- Collaborated as part of an Agile team responsible for the development of web applications
-- Utilized technologies: JavaScript, Node.js, Java, Spring, and MySQL
-- Improved automated testing by introducing BDD with Cucumber and Selenium
-- Replaced legacy cron-based dataflow with Apache ActiveMQ
+### HM Revenue & Customs (HMRC), UK
 
-#### Java Developer
-**Animation 2000 Ltd (Pinewood Studios, UK) — Apr 2004 – Feb 2011**
-- Designed and implemented SD Payroll System, a specialized solution for the film industry
-- Successfully implemented the HMRC Gateway Document Submission Protocol
-- Contributed to the setup and maintenance of standby database
+**Scala Developer (Contract)** | Jun 2021 - Present
 
-### Education
+- Develop and enhance Scala backend services across HMRC’s portfolio of online services.
+- Developed **[lazysm2](https://github.com/sunmingdh/lazysm2)**, a personal open-source terminal interface for HMRC’s service manager, adopted by multiple teams to streamline local service management and debugging.
+- Deliver technical presentations to colleagues, including replacing Shapeless type tagging with Scala 3 opaque types, covering type safety, interoperability and migration considerations.
+- Improve service resilience by addressing downstream dependency failures and request timeouts.
+- Resolve data consistency issues involving duplicate requests and concurrent updates.
+- Investigate and resolve intermittent production failures, using application logs and monitoring to identify underlying causes.
 
-- M.Sc. Computing Technologies,
-**University of Northumbria at Newcastle** — 2003
+### Sky, Osterley, UK
 
-- B.Sc. Computing Science, Electrical Engineering,
-**Xi’an University of Technology** — 1996
+**Scala Developer** | Mar 2019 - Aug 2020
 
-### Certifications
-- Core Spring Development Certificate — 2008
-- Scrum Master qualification Certificate — 2017
-- Domain Driven Development Certificate — 2017
+- Built highly available services supporting customer registration and device activation across frontend applications and devices.
+- Developed functional Scala services with Http4s, Akka HTTP, Cats, Cats Effect and Circe, using MongoDB and Kafka for persistence and messaging.
+- Deployed and operated services on AWS and Kubernetes as part of a self-organising Agile team.
 
-### References
-- Available on request
+### Telegraph Media Group, London, UK
+
+**Platform Engineer** | Oct 2018 - Feb 2019
+
+- Developed high-traffic Scala and Java platform services powering The Telegraph's web, mobile and third-party applications.
+- Enhanced services including the Content API, User Preferences and Sitemap Service, and supported delivery to AWS ECS and GCP Kubernetes through Jenkins.
+
+## Earlier Experience
+
+### WorldFirst, London, UK
+
+**Java / Scala Developer** | Jan 2017 - Aug 2018
+
+- Helped replace a failing monolithic compliance system with well-defined microservices in a six-engineer team, using Java 8, Scala, Kafka, Akka, Docker and Kubernetes.
+- Designed and delivered integration between the internal ledger and a third-party card transaction gateway, working within compliance requirements and service-level expectations.
+- Worked closely with business stakeholders on solution design and helped establish performance-testing practices for critical services.
+- Helped establish the company's first Java team, engineering practices and test frameworks; contributed to developer mentoring and a twice-weekly functional-programming guild.
+
+### NET-A-PORTER.COM, London, UK
+
+**Java Developer** | Mar 2011 - Mar 2016
+
+- Developed and maintained NET-A-PORTER and MR PORTER web applications using Java, Spring, JavaScript, Node.js and MySQL within Agile product teams.
+- Introduced BDD automation with Cucumber and Selenium and coached QA colleagues to write executable Gherkin scenarios.
+- Replaced cron-based data flows with ActiveMQ, contributed to an authentication API, and improved product-search performance with Solr.
+- Collaborated with the Shanghai team to integrate China UnionPay for the Chinese market.
+
+### Animation 2000 Ltd, Pinewood Studios, UK
+
+**Java Developer** | Apr 2004 - Feb 2011
+
+- Designed and developed a specialist film-industry payroll platform covering payroll calculations, invoicing, Sage exports and Barclays payment files.
+- Implemented the HMRC Gateway submission protocol using Java XML processing, secure multithreaded HTTP communication and digital signatures with Bouncy Castle and Apache XML Security.
+- Improved operational resilience through standby database setup and automated backup and restore procedures.
+
+## Education
+
+**MSc Computing Technologies** | 2003
+
+Northumbria University, Newcastle
+
+## Technical Writing
+
+**Selected topics:** Monads vs Algebraic Effects; Implicits in Scala 3; Free Monad to Tagless Final.
+
+[Read on website](https://sunmingac.github.io/)

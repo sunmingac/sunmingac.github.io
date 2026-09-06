@@ -1,223 +1,351 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Senior Scala Developer</title>
-    <style>
-        /* Basic reset */
-        body, h1, h2, h3, p, ul, li {
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ming Sun — Scala Developer specialising in functional programming and distributed systems.">
+  <title>Ming Sun | Scala Developer</title>
+  <style>
+    :root {
+      --text: #2f2f2f;
+      --secondary: #5b5b5b;
+      --rule: #d7d7d7;
+      --link: #1a0dab;
+      --paper: #ffffff;
+      --surround: #f5f5f5;
+    }
 
-        body {
-            font-family: 'Times New Roman', sans-serif;
-            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-            line-height: 1.6;
-            padding: 40px;
-            background: #f9f9f9;
-            color: #333;
-        }
+    * { box-sizing: border-box; }
 
-        /* Container for content */
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    body {
+      margin: 0;
+      padding: 36px 20px;
+      background: var(--surround);
+      color: var(--text);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.56;
+    }
 
-        header h1 {
-            text-align: center;
-            font-size: 24px;
-            color: #333;
-        }
+    .cv {
+      width: min(820px, 100%);
+      margin: 0 auto;
+      padding: 42px 50px 50px;
+      background: var(--paper);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
 
-        header {
-            .contact-info {
-                text-align: right;
-            }
-            .contact-info p {
-                font-size: 16px;
-                color: #666;
-            }
-            .contact-info a {
-                color: #1a0dab;
-                text-decoration: none;
-            }
-            .contact-info a:hover {
-                text-decoration: underline;
-            }
-        }
+    header {
+      padding-bottom: 18px;
+      text-align: center;
+    }
 
-        section {
-            border-top: 1px solid #ddd;
-        }
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
 
-        .skills p {
-            font-family: 'Courier New', Courier, monospace;
-        }
+    .headline {
+      margin: 7px 0 13px;
+      color: var(--secondary);
+      font-size: 17px;
+      font-weight: 700;
+    }
 
-        h2 {
-            font-size: 20px;
-            margin-top: 20px;
-            color: #333;
-        }
+    .contact,
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3px 16px;
+      margin: 3px 0 0;
+      color: var(--secondary);
+      font-size: 15px;
+      font-style: normal;
+    }
 
-        ul {
-            list-style-type: none; /* Removes default bullets */
-            padding-left: 0; /* Aligns list to the left */
-        }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
 
-        li {
-            padding: 4px; /* Adds padding above and below each item */
-            font-size: 14px; /* Sets a readable font size */
-        }
+    a:hover,
+    a:focus-visible { text-decoration: underline; }
 
-        li p {
-            padding-left: 20px;
-        }
+    section {
+      margin-top: 24px;
+      padding-top: 17px;
+      border-top: 1px solid var(--rule);
+    }
 
-        .job-title {
-            font-weight: bold;
-            color: #555;
-        }
+    h2 {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
 
-        .job-company {
-            font-weight: bold;
-            color: #666;
-        }
+    p { margin: 0; }
 
-        .job-dates {
-            font-style: italic;
-            color: #777;
-            /* font-size: 14px; */
-        }
-    </style>
+    .profile { max-width: none; }
+
+    .skills {
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.91rem;
+      line-height: 1.58;
+    }
+
+    .skills p + p { margin-top: 3px; }
+
+    .role {
+      margin-top: 25px;
+    }
+
+    .role:first-of-type { margin-top: 0; }
+
+    .role-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      column-gap: 20px;
+      align-items: baseline;
+    }
+
+    h3 {
+      margin: 0;
+      color: var(--text);
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .dates {
+      color: var(--secondary);
+      font-size: 15px;
+      font-style: italic;
+      white-space: nowrap;
+    }
+
+    .job-title {
+      margin-top: 1px;
+      color: var(--secondary);
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li { padding-left: 2px; }
+    li + li { margin-top: 7px; }
+
+    .education {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 2px 20px;
+      align-items: baseline;
+    }
+
+    .education .institution {
+      grid-column: 1 / -1;
+      color: var(--secondary);
+    }
+
+    .writing p + p { margin-top: 6px; }
+
+    @media (max-width: 620px) {
+      body {
+        padding: 0;
+        background: var(--paper);
+      }
+
+      .cv {
+        width: 100%;
+        padding: 30px 22px 40px;
+        box-shadow: none;
+      }
+
+      .role-heading, .education { grid-template-columns: 1fr; }
+      .dates { margin-top: 1px; }
+      .education .institution { grid-column: auto; }
+    }
+
+    @page { size: A4; margin: 14mm 16mm; }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #fff;
+        color: #222;
+        font-size: 10pt;
+        line-height: 1.48;
+      }
+
+      .cv {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      header { padding-bottom: 8pt; }
+      h1 { font-size: 22pt; }
+      .headline { margin: 4pt 0 6pt; font-size: 11pt; }
+      .contact, .links { margin-top: 1pt; font-size: 9pt; }
+      section { margin-top: 12pt; padding-top: 9pt; }
+      h2 { margin-bottom: 7pt; font-size: 12pt; }
+      .skills { font-size: 8.8pt; line-height: 1.5; }
+      .role { margin-top: 11pt; }
+      h3 { font-size: 10.4pt; }
+      .dates { font-size: 9pt; }
+      ul { margin-top: 5pt; padding-left: 14pt; }
+      li + li { margin-top: 3pt; }
+      a { color: inherit; text-decoration: none; }
+      h2, h3, .role-heading { break-after: avoid-page; }
+      .education, .writing { break-inside: avoid-page; }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
+  <main class="cv">
     <header>
-        <h1>Ming Sun</h1>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:sunmingac@gmail.com">sunmingac@gmail.com</a></p>
-            <p>Website: <a href="https://sunmingac.github.io" target="_blank">sunmingac.github.io</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/sunmingac" target="_blank">sunmingac</a></p>
-        </div>
+      <h1>Ming Sun</h1>
+      <p class="headline">Scala Developer | Functional Programming &amp; Distributed Systems</p>
+      <address class="contact">
+        <span>London, UK</span>
+        <a href="tel:+447979444191">07979 444191</a>
+        <a href="mailto:sunmingac@gmail.com">sunmingac@gmail.com</a>
+      </address>
+      <nav class="links" aria-label="Professional profiles">
+        <a href="https://www.linkedin.com/in/sunmingac">LinkedIn</a>
+        <a href="https://sunmingac.github.io/">Website</a>
+        <a href="https://github.com/sunmingdh">GitHub</a>
+      </nav>
     </header>
-    <section class="summary">
-        <h2>Summary</h2>
-        <ul>
-            <li>
-                <p>Experienced Scala Developer with 7+ years in functional programming and over 10 years with JVM technologies. Skilled in advanced Scala libraries, DevOps, mentoring, and Agile project management. Currently exploring Machine Learning and LLMs to improve data-driven decision-making and automation.</p>
-            </li>
-        </ul>
+
+    <section aria-labelledby="profile">
+      <h2 id="profile">Profile</h2>
+      <p class="profile">Scala developer specialising in functional programming and distributed systems, with over 20 years of software development experience. Strong expertise in the functional Scala ecosystem, asynchronous processing and cloud-based backend services.</p>
     </section>
-    <section class="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>
-                <p>Cats, Cats-effect, Http4s, fs2, ZIO, Akka, Kyo</p>
-                <p>Scala, Java, Rust, Python, Javascript</p>
-                <p>AWS, Google Cloud, Kubernetes, Docker</p>
-                <p>Linux & MacOS, Git</p>
-                <p>TDD, BDD, CI/CD, Jenkins, GitOps, Agile</p>
-                <p>Apache Kafka, PostgreSQL, MongoDB, Vector Database</p>
-            </li>
-        </ul>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Technical Skills</h2>
+      <div class="skills">
+        <p>Scala 3, Java, Cats, Cats Effect, FS2, ZIO, Kyo</p>
+        <p>Http4s, Tapir, Akka/Pekko, Apache Kafka, MongoDB, PostgreSQL</p>
+        <p>AWS, GCP, Kubernetes, Docker, Argo CD, Jenkins, GitOps, CI/CD</p>
+      </div>
     </section>
-    <section class="experience">
-        <h2>Professional Experience</h2>
+
+    <section aria-labelledby="experience">
+      <h2 id="experience">Professional Experience</h2>
+
+      <article class="role">
+        <div class="role-heading">
+          <h3>HM Revenue &amp; Customs (HMRC), UK</h3>
+          <span class="dates">Jun 2021 – Present</span>
+        </div>
+        <p class="job-title">Scala Developer (Contract)</p>
         <ul>
-            <li>
-                <p class="job-title">Scala Developer (Contract)</p>
-                <p class="job-company">Sky (UK) — Aug 2024 - Dec 2024</p>
-                <p class="job-dates">- Architected and implemented high-performance personalization APIs for the SkyQ platform, enhancing viewer experience through tailored content recommendations</p>
-                <p class="job-dates">- Engineered robust streaming solutions utilizing Cats Effect and fs2, with Tapir for type-safe API development</p>
-                <p class="job-dates">- Designed and optimized real-time data processing pipelines using Apache Kafka for scalable recommendation delivery</p>
-                <p class="job-dates">- Orchestrated continuous deployment workflows through GitOps methodology with ArgoCD on Google Kubernetes Engine</p>
-            </li>
-            <li>
-                <p class="job-title">Scala Developer (Contract)</p>
-                <p class="job-company">HMRC (UK) — Jun 2021 - Feb 2023</p>
-                <p class="job-dates">- Engineered and maintained secure authentication services, directly impacting user access for millions of UK citizens.</p>
-                <p class="job-dates">- Leveraged Scala ecosystem technologies such as Cats, Cats Effect, Akka, and MongoDB.</p>
-                <p class="job-dates">- Optimized application performance and reliability on AWS, using monitoring tools like Kibana and Grafana.</p>
-            </li>
-            <li>
-                <p class="job-title">Scala Developer</p>
-                <p class="job-company">Sky (Osterley, UK) — Mar 2019 – Aug 2020</p>
-                <p class="job-dates">- Developed highly available and scalable applications for user registration and device activation.</p>
-                <p class="job-dates">- Utilized Scala ecosystem technologies such as Http4s, Akka HTTP, Cats, Cats Effect</p>
-                <p class="job-dates">- Implemented data persistence solutions using MongoDB and Apache Kafka</p>
-                <p class="job-dates">- Deployed applications to Kubernetes clusters on AWS, ensuring scalability and reliability.</p>
-            </li>
-            <li>
-                <p class="job-title">Platform Engineer</p>
-                <p class="job-company">Telegraph Media Group (London, UK) — Oct 2018 – Feb 2019</p>
-                <p class="job-dates">- Developed high-traffic, scalable internal platforms using Scala and Java</p>
-                <p class="job-dates">- Powered The Telegraph's websites, mobile apps, and third-party applications</p>
-                <p class="job-dates">- Leveraged AWS and Google Cloud Platform (GCP) for cloud infrastructure</p>
-                <p class="job-dates">- Improved core platform services, including Content API, User Preferences, and Sitemap Service</p>
-            </li>
-            <li>
-                <p class="job-title">Java / Scala Developer</p>
-                <p class="job-company">WorldFirst (London, UK) — Jan 2017 – Aug 2018</p>
-                <p class="job-dates">- Spearheaded the modernization of a monolithic compliance system into microservices architecture</p>
-                <p class="job-dates">- Utilized technologies: Java 8, Scala, Apache Kafka, Akka, React.js, Docker, and Kubernetes</p>
-                <p class="job-dates">- Developed a third-party card transaction integration system with a focus on compliance and SLAs</p>
-                <p class="job-dates">- Collaborated closely with business stakeholders to align solutions with business needs</p>            </li>
-            <li>
-                <p class="job-title">Java Developer</p>
-                <p class="job-company">NET-A-PORTER.COM (London, UK) — Mar 2011 – Mar 2016</p>
-                <p class="job-dates">- Collaborated as part of an Agile team responsible for the development of web applications</p>
-                <p class="job-dates">- Utilized technologies: JavaScript, Node.js, Java, Spring, and MySQL</p>
-                <p class="job-dates">- Improved automated testing by introducing BDD with Cucumber and Selenium</p>
-                <p class="job-dates">- Replaced legacy cron-based dataflow with Apache ActiveMQ</p>            </li>
-            <li>
-                <p class="job-title">Java Developer</p>
-                <p class="job-company">Animation 2000 Ltd (Pinewood Studios, UK) — Apr 2004 – Feb 2011</p>
-                <p class="job-dates">- Designed and implemented SD Payroll System, a specialized solution for the film industry</p>
-                <p class="job-dates">- Successfully implemented the HMRC Gateway Document Submission Protocol</p>
-                <p class="job-dates">- Contributed to the setup and maintenance of standby database</p>            </li>
+          <li>Develop and enhance Scala backend services across HMRC’s portfolio of online services.</li>
+          <li>Developed <a href="https://github.com/sunmingdh/lazysm2">lazysm2</a>, a personal open-source terminal interface for HMRC’s service manager, adopted by multiple teams to streamline local service management and debugging.</li>
+          <li>Deliver technical presentations to colleagues, including replacing Shapeless type tagging with Scala 3 opaque types, covering type safety, interoperability and migration considerations.</li>
+          <li>Improve service resilience by addressing downstream dependency failures and request timeouts.</li>
+          <li>Resolve data consistency issues involving duplicate requests and concurrent updates.</li>
+          <li>Investigate and resolve intermittent production failures, using application logs and monitoring to identify underlying causes.</li>
         </ul>
-    </section>
-    <section class="education">
-        <h2>Education</h2>
+      </article>
+
+      <article class="role">
+        <div class="role-heading">
+          <h3>Sky, Osterley, UK</h3>
+          <span class="dates">Mar 2019 – Aug 2020</span>
+        </div>
+        <p class="job-title">Scala Developer</p>
         <ul>
-            <li>
-                <p class="job-title">M.Sc. Computing Technologies</p>
-                <p class="job-company">University of Northumbria at Newcastle — 2003</p>
-            </li>
-            <li>
-                <p class="job-title">B.Sc. Computing Science</p>
-                <p class="job-company">Xi’an University of Technology — 1996</p>
-            </li>
-            <li>
-                <p class="job-title">B.Sc. Electrical Engineering</p>
-                <p class="job-company">Xi’an University of Technology — 1996</p>
-            </li>
-            <li>
-                <p class="job-company">Core Spring Development Certificate — 2008</p>
-            </li>
-            <li>
-                <p class="job-company">Scrum Master qualification Certificate — 2017</p>
-            </li>
-            <li>
-                <p class="job-company">Domain Driven Development Certificate — 2017</p>
-            </li>
+          <li>Built highly available services supporting customer registration and device activation across frontend applications and devices.</li>
+          <li>Developed functional Scala services with Http4s, Akka HTTP, Cats, Cats Effect and Circe, using MongoDB and Kafka for persistence and messaging.</li>
+          <li>Deployed and operated services on AWS and Kubernetes as part of a self-organising Agile team.</li>
         </ul>
-    </section>
-    <section class="references">
-        <h2>References</h2>
+      </article>
+
+      <article class="role">
+        <div class="role-heading">
+          <h3>Telegraph Media Group, London, UK</h3>
+          <span class="dates">Oct 2018 – Feb 2019</span>
+        </div>
+        <p class="job-title">Platform Engineer</p>
         <ul>
-            <li>
-                <p class="job-title">Available on request</p>
-            </li>
+          <li>Developed high-traffic Scala and Java platform services powering The Telegraph's web, mobile and third-party applications.</li>
+          <li>Enhanced services including the Content API, User Preferences and Sitemap Service, and supported delivery to AWS ECS and GCP Kubernetes through Jenkins.</li>
         </ul>
+      </article>
     </section>
-</div>
+
+    <section aria-labelledby="earlier-experience">
+      <h2 id="earlier-experience">Earlier Experience</h2>
+
+      <article class="role">
+        <div class="role-heading">
+          <h3>WorldFirst, London, UK</h3>
+          <span class="dates">Jan 2017 – Aug 2018</span>
+        </div>
+        <p class="job-title">Java / Scala Developer</p>
+        <ul>
+          <li>Helped replace a failing monolithic compliance system with well-defined microservices in a six-engineer team, using Java 8, Scala, Kafka, Akka, Docker and Kubernetes.</li>
+          <li>Designed and delivered integration between the internal ledger and a third-party card transaction gateway, working within compliance requirements and service-level expectations.</li>
+          <li>Worked closely with business stakeholders on solution design and helped establish performance-testing practices for critical services.</li>
+          <li>Helped establish the company's first Java team, engineering practices and test frameworks; contributed to developer mentoring and a twice-weekly functional-programming guild.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-heading">
+          <h3>NET-A-PORTER.COM, London, UK</h3>
+          <span class="dates">Mar 2011 – Mar 2016</span>
+        </div>
+        <p class="job-title">Java Developer</p>
+        <ul>
+          <li>Developed and maintained NET-A-PORTER and MR PORTER web applications using Java, Spring, JavaScript, Node.js and MySQL within Agile product teams.</li>
+          <li>Introduced BDD automation with Cucumber and Selenium and coached QA colleagues to write executable Gherkin scenarios.</li>
+          <li>Replaced cron-based data flows with ActiveMQ, contributed to an authentication API, and improved product-search performance with Solr.</li>
+          <li>Collaborated with the Shanghai team to integrate China UnionPay for the Chinese market.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-heading">
+          <h3>Animation 2000 Ltd, Pinewood Studios, UK</h3>
+          <span class="dates">Apr 2004 – Feb 2011</span>
+        </div>
+        <p class="job-title">Java Developer</p>
+        <ul>
+          <li>Designed and developed a specialist film-industry payroll platform covering payroll calculations, invoicing, Sage exports and Barclays payment files.</li>
+          <li>Implemented the HMRC Gateway submission protocol using Java XML processing, secure multithreaded HTTP communication and digital signatures with Bouncy Castle and Apache XML Security.</li>
+          <li>Improved operational resilience through standby database setup and automated backup and restore procedures.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="education">
+        <h3>MSc Computing Technologies</h3>
+        <span class="dates">2003</span>
+        <p class="institution">Northumbria University, Newcastle</p>
+      </div>
+    </section>
+
+    <section class="writing" aria-labelledby="writing">
+      <h2 id="writing">Technical Writing</h2>
+      <p><strong>Selected topics:</strong> Monads vs Algebraic Effects; Implicits in Scala 3; Free Monad to Tagless Final.</p>
+      <p><a href="https://sunmingac.github.io/">Read on website</a></p>
+    </section>
+  </main>
 </body>
 </html>
